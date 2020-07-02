@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/login.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="webkit" name="renderer">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	</head>
+
+	<body>
+		<div id="root" style="width: 100%;height: 100%;">
+			<div class="header">
+				<div class="header-top">
+					<div class="header-top-content">
+
+						<h1><a href=""><img src="../imgs/$JJP1PQ)ISMOAEYH}~2V4AB.png"/></a></h1>
+						<ul class="head-top-ul">
+							<li>
+								<a href="index.html" style="color: #acb2e0;">首页</a>
+							</li>
+							<li>
+								<a href="" style="padding: 0 30px;" class="nav">游戏 &or;</a>
+							</li>
+							<li>
+								<a href="">社区</a>
+							</li>
+							<li>
+								<a href="" style="padding: 0 30px;" class="nav">周边 &or;</a>
+							</li>
+							<li>
+								<a href="" style="padding: 0 20px;" class="nav">头条 &or;</a>
+							</li>
+							<li>
+								<a href="">客户端</a>
+							</li>
+							<li>
+								<a href="">国际站</a>
+							</li>
+						</ul>
+						<div class="game-nav aa">
+							<ol>
+								<li>预售</li>
+								<li>体育</li>
+								<li>策略</li>
+								<li>动作</li>
+								<li>角色扮演</li>
+								<li>竞速</li>
+							</ol>
+						</div>
+						<div class="zhoubian-nav aa">
+							<ol>
+								<li>预售</li>
+								<li>体育</li>
+								<li>策略</li>
+								<li>动作</li>
+								<li>角色扮演</li>
+								<li>竞速</li>
+							</ol>
+						</div>
+						<div class="toutiao-nav aa">
+							<ol>
+								<li>预售</li>
+								<li>体育</li>
+								<li>策略</li>
+								<li>动作</li>
+								<li>角色扮演</li>
+								<li>竞速</li>
+							</ol>
+						</div>
+						<div class="header-info">
+							<div class="links">
+								<a href="">登录</a>
+								<span class="divide"></span>
+								<a href="zhuce.html">注册</a>
+							</div>
+							<div class="search">
+								<div class="search-type">
+									<div class="search-type-title">
+										商城
+									</div>
+									<ul class="search-type-hide">
+										<li class="shangcheng">商城</li>
+										<li class="shequ">社区</li>
+										<li class="zhoubian">周边</li>
+									</ul>
+								</div>
+								<div class="search-from">
+									<span class="search-line"></span>
+									<input type="text" class="search-text" placeholder="请输入关键字" />
+									<span class="search-button">
+										查找
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-foot">
+						<div class="header-foot-content">
+							您的位置:
+							<a>登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="login-background">
+				<div class="content">
+					<div class="sign-in">
+						<div class="signin-block">
+							<a href="logo-block"></a>
+						</div>
+						<div class="login">
+							<div class="login-form">
+								<div class="form-head">
+									<h1>用户登录</h1>
+								</div>
+								<div class="form-body">
+									<div class="">
+										<input class="user" type="text" id="" value="" placeholder="用户名" />
+									</div>
+									<div>
+										<input class="pass" type="text" id="" value="" placeholder="密码" />
+									</div>
+									<div>
+										<button class="login-btn">登录</button>
+									</div>
+
+									<h2>
+									<input class="checkbox" type="checkbox" name="" id="" value="" />
+									<label class="label" for="account_remember_me">记住密码</label>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="../script/login.js"></script>
+			<script src="../script/ajax.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../script/cookie.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				var user = document.querySelector('.user')
+				var pass = document.querySelector('.pass')
+				var loginbtn = document.querySelector('.login-btn')
+				var check = document.querySelector('.checkbox')
+				var shuju
+				window.onload=function(){
+					if(getCookie('user') && getCookie('pass')) {
+						user.value = getCookie('user');
+						pass.value = getCookie('pass');
+						check.checked = true;
+					}
+				}
+				check.onclick=function(){
+					if(!check.checked){
+						removeCookie('user')
+						removeCookie('pass')
+						
+					}
+				}
+				ajax({
+					url: '../json/login.json',
+					type: 'get',
+					dataType: 'json',
+					success: function(json) {
+						shuju = JSON.parse(json)
+						console.log(shuju)
+					}
+				})
+
+				loginbtn.onclick = function() {
+					if(!user.value || !pass.value) {
+						alert("账号或密码不能为空")
+					} else {
+						for(var i = 0; i < shuju.length; i++) {
+							if(user.value == shuju[i]['user'] && pass.value == shuju[i]['pass']) {
+								if(check.checked) {
+									setCookie({
+										key: 'user' ,
+										val: user.value ,
+										days: 7
+									})
+									setCookie({
+										key: 'pass' ,
+										val: pass.value ,
+										days: 7
+									})
+								}
+								localStorage.setItem("username",user.value);
+								location.href='index.html?name='+user.value+'&psw='+pass.value;
+							} else {
+								alert("账号密码错误请重新输入")
+							}
+						}
+					}
+				}
+			</script>
+	</body>
+
+</html>

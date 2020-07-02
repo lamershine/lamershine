@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/xiangqing.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="webkit" name="renderer">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	</head>
+
+	<body>
+
+		<body>
+			<div id="root" style="width: 100%;height: 100%;">
+				<div class="header">
+					<div class="header-top">
+						<div class="header-top-content">
+
+							<h1><a href="" ><img src="../imgs/$JJP1PQ)ISMOAEYH}~2V4AB.png"/></a></h1>
+							<ul class="head-top-ul">
+								<li>
+									<a href="index.html" style="color: #acb2e0;">首页</a>
+								</li>
+								<li>
+									<a href="" style="padding: 0 30px;" class="nav">游戏 &or;</a>
+								</li>
+								<li>
+									<a href="">社区</a>
+								</li>
+								<li>
+									<a href="" style="padding: 0 30px;" class="nav">周边 &or;</a>
+								</li>
+								<li>
+									<a href="" style="padding: 0 20px;" class="nav">头条 &or;</a>
+								</li>
+								<li>
+									<a href="">客户端</a>
+								</li>
+								<li>
+									<a href="">国际站</a>
+								</li>
+							</ul>
+							<div class="game-nav aa">
+								<ol>
+									<li>预售</li>
+									<li>体育</li>
+									<li>策略</li>
+									<li>动作</li>
+									<li>角色扮演</li>
+									<li>竞速</li>
+								</ol>
+							</div>
+							<div class="zhoubian-nav aa">
+								<ol>
+									<li>预售</li>
+									<li>体育</li>
+									<li>策略</li>
+									<li>动作</li>
+									<li>角色扮演</li>
+									<li>竞速</li>
+								</ol>
+							</div>
+							<div class="toutiao-nav aa">
+								<ol>
+									<li>预售</li>
+									<li>体育</li>
+									<li>策略</li>
+									<li>动作</li>
+									<li>角色扮演</li>
+									<li>竞速</li>
+								</ol>
+							</div>
+							<div class="header-info">
+								<div class="links">
+									<a href="login.html">登录</a>
+									<span class="divide"></span>
+									<a href="zhuce.html">注册</a>
+								</div>
+								<div class="search">
+									<div class="search-type">
+										<div class="search-type-title">
+											商城
+										</div>
+										<ul class="search-type-hide">
+											<li class="shangcheng">商城</li>
+											<li class="shequ">社区</li>
+											<li class="zhoubian">周边</li>
+										</ul>
+									</div>
+									<div class="search-from">
+										<span class="search-line"></span>
+										<input type="text" class="search-text" placeholder="请输入关键字" />
+										<span class="search-button">
+										查找
+									</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header-foot">
+							<div class="header-foot-content">
+								您的位置:
+								<a>死亡搁浅</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gamebackground">
+					<div class="container">
+						<div class="main">
+							<!--<h1 class="game-name">死亡搁浅</h1>
+							<div class="game-content">
+								<p>游戏介绍：传奇游戏制作人小岛秀夫带来颠覆传统游戏题材的全新体验。 山姆·布里吉斯必须勇敢直面因死亡搁浅而面目全非的世界。 手握残存的希望碎片，踏上征途，逐步重建已分崩离析的世界</p>
+								<div class="game-price">
+									<span>￥288</span>
+								</div>
+								<button>加入购物车</button>
+								
+							</div>-->
+						</div>
+					</div>
+				</div>
+				<!--<div class="overlayfixed undefined">
+					<div class="overlaybox-wrap" style="height: 246px; width: 400px; top: 43px;">
+						<div class="overlaybox-content">
+							<div class="overlaybox-header">
+								<h3 class="overlaybox-title">提示</h3>
+								<a class="overlaybox-close-btn"><i></i></a>
+							</div>
+							<div class="overlaybox-body">
+								<div class="add-success-info">
+									<div class="add-success-text">成功加入购物车！</div>
+									<div class="add-success-action-block">
+										<a class="go-to-cart" href="/cart">前往购物车</a>
+										<div class="go-on-hanging">继续逛逛</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<script src="../script/ajax.js"></script>
+				<script src="../script/jquery-1.8.3.js"></script>
+				<script type="text/javascript">
+					$(function() {
+						// 判断购物车是否有数据
+						if(localStorage.getItem('gamename')) {
+							// 本地存储中购物车的数据
+							var goodsData = (localStorage.getItem('gamename'));
+							console.log(goodsData)
+							// 根据商品code获取数据
+							$.ajax({
+								url: '../json/list.json',
+								type: 'get',
+								dataType: 'json',
+								success: function(json) {
+									$.each(json, function(index, item) {
+										if(item.game == goodsData) {
+											var goodsdom =
+												'<h1 class="game-name">' + item.game + '</h1>' +
+												'<div class="game-content">' +
+												'<p>游戏介绍:' + item.main + '</p>' +
+												'<div class="game-price">' +
+												'<span>' + item.price + '</span>' +
+												'</div>' +
+												'<button class="tianjia">加入购物车</button>' +
+												'<button class="goumai">立即购买</button>' +
+												'</div>';
+											$('.main').append(goodsdom);
+											$('.header-foot-content a').html(item.game);
+											var images = 'url(' + item.img2 + ')'
+											$('.gamebackground').css('background-image', images)
+											$('button').attr('code', item.code)
+										}
+									})
+								}
+							})
+						}
+
+						$('.main').on('click', '.tianjia', function() {
+							if(localStorage.getItem('goods')) {
+								var goodsArr = JSON.parse(localStorage.getItem('goods'));
+							} else {
+								var goodsArr = [];
+							}
+							var code = $(this).attr('code');
+							var hasCode = false;
+
+							// 遍历数组，判断是否已加入过购物车
+							$.each(goodsArr, function(index, item) {
+								if(item.code === code) {
+									item.num++;
+									hasCode = true;
+								}
+							})
+
+							if(!hasCode) {
+								goodsArr.push({
+									"code": code,
+									"num": 1
+								});
+							}
+
+							var strArr = JSON.stringify(goodsArr);
+							localStorage.setItem('goods', strArr);
+							var fixsdom = '<div class="overlayfixed undefined">' +
+								'<div class="overlaybox-wrap" style="height: 246px; width: 400px; top: 43px;">' +
+								'<div class="overlaybox-content">' +
+								'<div class="overlaybox-header">' +
+								'<h3 class="overlaybox-title">提示</h3>' +
+								'<a class="overlaybox-close-btn"><i></i></a>' +
+								'</div>' +
+								'<div class="overlaybox-body">' +
+								'<div class="add-success-info">' +
+								'<div class="add-success-text">成功加入购物车！</div>' +
+								'<div class="add-success-action-block">' +
+								'<a class="go-to-cart" href="gouwuche.html">前往购物车</a>' +
+								'<div class="go-on-hanging">继续逛逛</div>' +
+								'</div>' +
+								'</div>' +
+								'</div>' +
+								'</div>' +
+								'</div>' +
+								'</div>'
+
+							$('#root').append(fixsdom)
+							$('#root').on('click', '.go-on-hanging', function() {
+								var a = document.querySelector('.overlayfixed')
+								a.remove()
+
+							})
+						})
+					})
+
+					function loaddata() {
+						var links = document.querySelector('.links')
+						var theme = localStorage.getItem('username')
+						if(!theme == null || !theme == "") {
+							links.innerHTML = '<h4>欢迎<b>' + theme + '</b>回来<h5 class="exit">退出登录</h5></h4>'
+
+						} else {
+							links.innerHTML = '<a href="login.html">登录</a>' +
+								'<span class="divide"></span>' +
+								'<a href="zhuce.html">注册</a>'
+						}
+					}
+					loaddata()
+					var exit = document.querySelector('.exit')
+					exit.onclick = function() {
+						localStorage.removeItem("username");
+						loaddata();
+					}
+				</script>
+		</body>
+
+</html>

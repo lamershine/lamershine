@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>请使用支付宝或者微信扫一扫付款</h1>
+		<div class="">
+			<img src="../imgs/weixin.png" style="width: 200px;height: 200px;"/>
+			<img src="../imgs/zhifubao.png" style="width: 200px;height: 200px;"/>
+		</div>
+		￥
+		<span style="margin-top: 15px;font-size: 18px;"></span>
+	</body>
+	<script type="text/javascript">
+		var a = localStorage.getItem('price')
+		var b = document.querySelector('span')
+		b.innerHTML = a
+	</script>
+
+</html>

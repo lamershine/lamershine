@@ -1,0 +1,275 @@
+body {
+  background: #202539; }
+
+.header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 10; }
+  .header ul li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    color: #7a80a2;
+    font-size: 14px;
+    padding: 0 15px; }
+
+.header-top {
+  width: 100%;
+  height: 70px;
+  background: #292e41;
+  position: relative; }
+  .header-top h1 {
+    width: 79px;
+    height: 50px;
+    margin-top: 20px;
+    float: left; }
+
+.head-top-ul {
+  height: 70px;
+  float: left;
+  margin-left: 200px; }
+  .head-top-ul li {
+    float: left;
+    height: 70px; }
+
+.header-top-content {
+  margin: 0 60px;
+  height: 70px; }
+
+.header-top-content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.game-nav {
+  width: 100px;
+  height: 240px;
+  background: #292e42;
+  opacity: 1;
+  margin-left: 350px;
+  position: absolute;
+  top: 70px; }
+  .game-nav ol {
+    width: 100px;
+    height: 240px; }
+    .game-nav ol li {
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #7a80a2; }
+
+.zhoubian-nav {
+  width: 100px;
+  height: 240px;
+  background: #292e42;
+  opacity: 1;
+  margin-left: 500px;
+  position: absolute;
+  top: 70px; }
+  .zhoubian-nav ol {
+    width: 100px;
+    height: 240px; }
+    .zhoubian-nav ol li {
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #7a80a2; }
+
+.toutiao-nav {
+  width: 100px;
+  height: 240px;
+  background: #292e42;
+  opacity: 1;
+  margin-left: 600px;
+  position: absolute;
+  top: 70px; }
+  .toutiao-nav ol {
+    width: 100px;
+    height: 240px; }
+    .toutiao-nav ol li {
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #7a80a2; }
+
+.header-info {
+  float: right;
+  padding: 18px 0;
+  position: relative;
+  margin-right: 20px; }
+
+.header-info .links {
+  line-height: 34px;
+  margin-left: 20px;
+  float: right; }
+  .header-info .links a {
+    font-size: 14px;
+    color: #7a80a2;
+    cursor: pointer; }
+  .header-info .links span {
+    display: inline-block;
+    height: 14px;
+    width: 2px;
+    margin: 0 20px -2px;
+    background: #7a80a2; }
+
+.header-info .search {
+  height: 32px;
+  background-color: #ffffff;
+  width: 260px;
+  position: relative;
+  font-size: 14px;
+  border-radius: 3px 3px 3px 3px;
+  float: right;
+  margin-right: 50px; }
+  .header-info .search div:nth-child(1) {
+    position: absolute;
+    width: 70px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    color: #716d6d; }
+    .header-info .search div:nth-child(1) ul {
+      display: none;
+      position: relative;
+      top: 32px;
+      color: #716d6d; }
+      .header-info .search div:nth-child(1) ul li {
+        background-color: #ffffff; }
+  .header-info .search div:nth-child(2) {
+    display: inline-block;
+    margin-left: 70px;
+    line-height: 32px;
+    height: 32px;
+    position: relative;
+    font-size: 0px; }
+    .header-info .search div:nth-child(2) .search-line {
+      float: left;
+      height: 20px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border-right: 1px solid #d4d4d4;
+      text-indent: 8px; }
+    .header-info .search div:nth-child(2) .search-text {
+      line-height: 32px;
+      height: 32px;
+      font-size: 12px;
+      color: #716d6d;
+      border: 0;
+      width: 153px;
+      text-indent: 8px; }
+    .header-info .search div:nth-child(2) .search-button {
+      float: right;
+      height: 32px;
+      width: 36px;
+      background: #dcdcdc;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0 3px 3px 0; }
+
+.header-info:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.aa {
+  display: none;
+  z-index: 100;
+  opacity: 0.8; }
+
+.header-foot {
+  background: #383d50; }
+  .header-foot div {
+    min-width: 1200px;
+    margin-left: 60px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #7a80a2; }
+    .header-foot div a {
+      color: #b9c0ef;
+      cursor: pointer; }
+
+.header-foot:before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.login-background {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 80px;
+  background-image: url(https://s3.sonkwo.com/FuY51GgP_1xv1FQ-CZQfbm4Da9OF); }
+  .login-background .sign-in {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .login-background .sign-in .signin-block a {
+      float: left;
+      height: 800px;
+      width: 650px;
+      overflow: hidden; }
+    .login-background .sign-in .login {
+      float: right;
+      z-index: 999;
+      margin-top: 150px;
+      width: 340px;
+      padding: 30px;
+      background: #292e42;
+      position: relative;
+      border-radius: 5px; }
+      .login-background .sign-in .login .login-form {
+        background: none;
+        padding: 0; }
+        .login-background .sign-in .login .login-form .form-head {
+          width: 100%;
+          height: 36px;
+          border-bottom: 1px solid #3f4760; }
+          .login-background .sign-in .login .login-form .form-head h1 {
+            font-size: 16px;
+            margin-right: 50px;
+            height: 100%;
+            float: left;
+            color: #b9c0ef;
+            border-bottom: 2px solid #b9c0ef; }
+        .login-background .sign-in .login .login-form .form-body {
+          margin-top: 30px;
+          min-height: 230px; }
+          .login-background .sign-in .login .login-form .form-body div {
+            margin-top: 20px; }
+            .login-background .sign-in .login .login-form .form-body div input {
+              width: 340px;
+              height: 40px;
+              box-sizing: border-box;
+              color: #b9c0ef;
+              line-height: 46px;
+              background-color: #202539;
+              font-size: 14px;
+              text-indent: 5px;
+              border: 1px solid #3a4056;
+              border-radius: 2px;
+              text-indent: 20px;
+              resize: none; }
+            .login-background .sign-in .login .login-form .form-body div button {
+              width: 340px;
+              height: 40px; }
+          .login-background .sign-in .login .login-form .form-body h2 {
+            margin-top: 20px;
+            color: red; }

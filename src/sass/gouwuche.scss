@@ -1,0 +1,425 @@
+        body {
+            background: #202539;
+        }
+        
+        .header {
+            width: 100%;
+            position: relative;
+            top: 0;
+            z-index: 10;
+            ul {
+                li {
+                    a {
+                        display: block;
+                        height: 70px;
+                        line-height: 70px;
+                        color: #7a80a2;
+                        font-size: 14px;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+        
+        .header-top {
+            width: 100%;
+            height: 70px;
+            background: #292e41;
+            position: relative;
+            h1 {
+                width: 79px;
+                height: 50px;
+                margin-top: 20px;
+                float: left;
+            }
+        }
+        
+        .head-top-ul {
+            height: 70px;
+            float: left;
+            margin-left: 200px;
+            li {
+                float: left;
+                height: 70px;
+            }
+        }
+        
+        .header-top-content {
+            margin: 0 60px;
+            height: 70px;
+        }
+        
+        .header-top-content:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        .game-nav {
+            width: 100px;
+            height: 240px;
+            background: #292e42;
+            opacity: 1;
+            margin-left: 350px;
+            position: absolute;
+            top: 70px;
+            ol {
+                width: 100px;
+                height: 240px;
+                li {
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #7a80a2;
+                }
+            }
+        }
+        
+        .zhoubian-nav {
+            width: 100px;
+            height: 240px;
+            background: #292e42;
+            opacity: 1;
+            margin-left: 500px;
+            position: absolute;
+            top: 70px;
+            ol {
+                width: 100px;
+                height: 240px;
+                li {
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #7a80a2;
+                }
+            }
+        }
+        
+        .toutiao-nav {
+            width: 100px;
+            height: 240px;
+            background: #292e42;
+            opacity: 1;
+            margin-left: 600px;
+            position: absolute;
+            top: 70px;
+            ol {
+                width: 100px;
+                height: 240px;
+                li {
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #7a80a2;
+                }
+            }
+        }
+        
+        .header-info {
+            float: right;
+            padding: 18px 0;
+            position: relative;
+            margin-right: 20px;
+        }
+        
+        .header-info .links {
+            line-height: 34px;
+            margin-left: 20px;
+            float: right;
+            a {
+                font-size: 14px;
+                color: #7a80a2;
+                cursor: pointer;
+            }
+            span {
+                display: inline-block;
+                height: 14px;
+                width: 2px;
+                margin: 0 20px -2px;
+                background: #7a80a2;
+            }
+            h4 {
+                margin-top: -10px;
+                b {
+                    color: red;
+                    margin-left: 2px;
+                    margin-right: 2px;
+                }
+            }
+            h5 {
+                margin-top: -10px;
+                color: orange;
+            }
+        }
+        
+        .header-info .search {
+            height: 32px;
+            background-color: #ffffff;
+            width: 260px;
+            position: relative;
+            font-size: 14px;
+            border-radius: 3px 3px 3px 3px;
+            float: right;
+            margin-right: 50px;
+            div {
+                &:nth-child(1) {
+                    position: absolute;
+                    width: 70px;
+                    line-height: 32px;
+                    text-align: center;
+                    cursor: pointer;
+                    z-index: 1000;
+                    color: #716d6d;
+                    ul {
+                        display: none;
+                        position: relative;
+                        top: 32px;
+                        color: #716d6d;
+                        li {
+                            background-color: #ffffff;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    display: inline-block;
+                    margin-left: 70px;
+                    line-height: 32px;
+                    height: 32px;
+                    position: relative;
+                    font-size: 0px;
+                    .search-line {
+                        float: left;
+                        height: 20px;
+                        margin-top: 6px;
+                        margin-bottom: 6px;
+                        border-right: 1px solid #d4d4d4;
+                        text-indent: 8px;
+                    }
+                    .search-text {
+                        line-height: 32px;
+                        height: 32px;
+                        font-size: 12px;
+                        color: #716d6d;
+                        border: 0;
+                        width: 153px;
+                        text-indent: 8px;
+                    }
+                    .search-button {
+                        float: right;
+                        height: 32px;
+                        width: 36px;
+                        background: #dcdcdc;
+                        text-align: center;
+                        cursor: pointer;
+                        border-radius: 0 3px 3px 0;
+                    }
+                }
+            }
+        }
+        
+        .header-info:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        .aa {
+            display: none;
+            z-index: 100;
+            opacity: 0.8;
+        }
+        
+        .header-foot {
+            background: #383d50;
+            div {
+                min-width: 1200px;
+                margin-left: 60px;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+                color: #7a80a2;
+                a {
+                    color: #b9c0ef;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .header-foot:before {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        .cart-container {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 45px;
+            .cart-title {
+                font-size: 18px;
+                text-align: left;
+                color: #b9c0ef;
+                padding-top: 55px;
+                padding-bottom: 51px;
+            }
+            .cart-content {
+                .head {
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid #33394d;
+                    background-color: #292e42;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 14px;
+                    color: #7a80a2;
+                    div {
+                        float: left;
+                    }
+                    .checks {
+                        width: 165px;
+                        margin-left: 10px;
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                    .names {
+                        width: 325px;
+                    }
+                    .tager {
+                        width: 230px;
+                    }
+                    .prices {
+                        width: 340px;
+                    }
+                    .opers {
+                        width: 120px;
+                    }
+                }
+                .main {
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    .game-item {
+                        background-color: #33394d;
+                        height: 120px;
+                        width: 100%;
+                        border-bottom: 1px solid #202539;
+                        .tags {
+                            line-height: 120px;
+                            color: #7a80a2;
+                            font-size: 14px;
+                            float: left;
+                            height: 120px;
+                            text-align: left;
+                        }
+                        .check {
+                            line-height: 0;
+                            width: 165px;
+                            margin-left: 10px;
+                            position: relative;
+                            input {
+                                width: 10px;
+                                height: 20px;
+                                position: absolute;
+                                margin-left: 10px;
+                                left: -10px;
+                                top: 50px;
+                            }
+                            a {
+                                position: absolute;
+                                left: 20px;
+                                top: 18px;
+                            }
+                            img {
+                                width: 90%;
+                                height: 100%;
+                            }
+                        }
+                        .name {
+                            width: 325px;
+                        }
+                        .tag {
+                            width: 230px;
+                        }
+                        .price {
+                            width: 340px;
+                        }
+                        .oper {
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .footer {
+            position: relative;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #33394d;
+            .select-all {
+                float: left;
+                color: #7a80a2;
+                font-size: 14px;
+                height: 100%;
+                width: 900px;
+                input {
+                    display: inline-block;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .total {
+                float: right;
+                height: 80px;
+                line-height: 80px;
+                width: 300px;
+                color: #7a80a2;
+                font-size: 12px;
+                .total-game-count {
+                    width: 80px;
+                    float: left;
+                    span {
+                        color: #ff6900;
+                        font-size: 14px;
+                    }
+                }
+                .total-price {
+                    width: 80px;
+                    float: left;
+                    span {
+                        color: #ff6900;
+                        font-size: 14px;
+                    }
+                }
+                .submit {
+                    display: inline-block;
+                    float: right;
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #ff6900;
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: #ffffff;
+                    text-align: center;
+                    border-radius: 2px;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }

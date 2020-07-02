@@ -1,0 +1,58 @@
+{
+  "id": "1612900",
+  "name": "字体",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "151640",
+      "name": "通知",
+      "font_class": "tongzhi",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "628452",
+      "name": "icon_频道Tab_心愿单_未激活",
+      "font_class": "iconpindaotabxinyuandanweijihuo",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "1079723",
+      "name": "我的－联系客服",
+      "font_class": "wodelianxikefu",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "2544676",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "5451182",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9099012",
+      "name": "优惠券 (1)",
+      "font_class": "youhuiquan",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "10172816",
+      "name": "二维码",
+      "font_class": "qrcode",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

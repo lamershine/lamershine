@@ -1,0 +1,21 @@
+@charset "UTF-8";
+html, body, input, span, ul, li, ol, dl, dt, dd, img, a, p, h1, h2, h3, h4, h5, h6, b, strong, i, em, div {
+  padding: 0;
+  margin: 0; }
+
+ul li, ol li {
+  list-style: none; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 12px; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, b {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }

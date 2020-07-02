@@ -1,0 +1,50 @@
+[
+	{
+		"game":"死亡搁浅",
+	    "img1":"https://s1-rc.sonkwo.com/medium/910135728720663/file/53631/sonkwo-top-L-DEATH-STRANDING.jpg?imageView2/1/w/224/h/132",
+	    "img2":"https://s1-rc.sonkwo.com/medium/910135728720663/file/53632/sonkwo-background-DEATH-STRANDING.jpg",
+	    "main":"传奇游戏制作人小岛秀夫带来颠覆传统游戏题材的全新体验。 山姆·布里吉斯必须勇敢直面因死亡搁浅而面目全非的世界。 手握残存的希望碎片，踏上征途，逐步重建已分崩离析的世界。",
+	    "price":"￥298",
+	    "code":"abc1"
+	},
+	{
+		"game":"彼岸花",
+	    "img1":"https://s1-rc.sonkwo.com/medium/910135728720663/file/52728/sonkwo-top-L-Othercide.jpg?imageView2/1/w/224/h/132",
+	    "img2":"https://s1-rc.sonkwo.com/medium/910135728720663/file/52729/sonkwo-background-Othercide.jpg",
+	    "main":"作为人类最后的希望，你将统领军队，踏着华丽动作与反击交织而成的繁复舞步，利用原创的动态时间轴系统，与凶悍可怖的 Boss 们展开史诗般的战斗。",
+	    "price":"￥110",
+	    "code":"abc2"
+	},
+	{
+		"game":"海商王4标准版",
+	    "img1":"https://s1-rc.sonkwo.com/medium/910135728720663/file/52395/sonkwo-top-L-Port-Royale-4.jpg?imageView2/1/w/224/h/132",
+	    "img2":"https://s1-rc.sonkwo.com/medium/910135728720663/file/52396/sonkwo-background-Port-Royale-4.jpg",
+	    "main":"扬帆起航，加入西班牙、英国、法国和荷兰的殖民势力，为争夺17世纪加勒比地区的霸权而战。",
+	    "price":"￥188",
+	    "code":"abc3"
+	},
+	{
+		"game":"仁王完全版",
+	    "img1":"https://s1-rc.sonkwo.com/medium/910135728720663/file/37286/sonkwo-top-L-%E4%BB%81%E7%8E%8B-%E5%AE%8C%E5%85%A8%E7%89%88.jpg?imageView2/1/w/224/h/132",
+	    "img2":"https://s1-rc.sonkwo.com/medium/910135728720663/file/37287/%E6%B8%B8%E6%88%8F%E9%A1%B5%E8%83%8C%E6%99%AF-%E4%BB%81%E7%8E%8B-%E5%AE%8C%E5%85%A8%E7%89%88.jpg",
+	    "main":"以贼人嚣张跋扈，妖怪四处蠢动的幽玄日本战国时代为舞台的黑暗风格战国动作RPG，史实人物「三浦按针」为蓝本的金发碧眼武士「威廉」以及历经几番死斗的故事。除战国时代末期史实为基础外，实际存在的武将也将登场，深奥札实的故事，紧张感与极高的成就感，足以称之为「战国殊死游戏」。",
+	    "price":"￥124",
+	    "code":"abc4"
+	},
+	{
+		"game":"怪物猎人：世界",
+	    "img1":"https://s1-rc.sonkwo.com/medium/910135728720663/file/48011/mhw-head.jpg?imageView2/1/w/224/h/132",
+	    "img2":"https://s1-rc.sonkwo.com/medium/910135728720663/file/48012/f3f6f17e0ac79cb878e2b4f492cf3b4a.jpg",
+	    "main":"在系列最新作品「Monster Hunter: World」里, 地形和环境生物, 甚至魔物的生态系统都能被利用, 用一切手段挑战巨大的魔物。在新建构的「Monster Hunter: World」中, 可以体验到你一直期盼的极致猎人生活。",
+	    "price":"￥133",
+	    "code":"abc5"
+	},
+	{
+		"game":"鬼泣5：标准版",
+	    "img1":"https://s1-rc.sonkwo.com/medium/910135728720663/file/48230/sonkwo-top-L-%E9%AC%BC%E6%B3%A35.jpg?imageView2/1/w/224/h/132",
+	    "img2":"https://s1-rc.sonkwo.com/medium/910135728720663/file/48231/Flf391AaUGPUDA-bvhmQzgSPGJp9.jpg",
+	    "main":"最强的恶魔猎人强势回归！动作游戏迷翘首以待，传说中的Stylish Action《Devil May Cry》终于復活！",
+	    "price":"￥109",
+	    "code":"abc6"
+	}
+]
